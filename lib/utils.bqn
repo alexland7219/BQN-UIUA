@@ -4,6 +4,7 @@
   Split,
   Words,
   Parse,
+  EasyParse,
   ParseNums ⟩ ⇐ 
 
 digits  ← '0'+↕10
@@ -18,5 +19,6 @@ Split ← {
 
 Words ← ' '⊸Split
 
-Parse     ← >· Words¨ •file.Lines
+EasyParse ← Words¨ •file.Lines
+Parse     ← > EasyParse
 ParseNums ← (•ParseFloat¨˘) Parse
