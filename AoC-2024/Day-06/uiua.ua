@@ -1,0 +1,1 @@
+RawInp ← &fras "inpbasic.txt"

@@ -1,4 +1,5 @@
 {
     "editor.fontFamily": "Uiua386",
-    "editor.fontSize": 20
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 20
 }

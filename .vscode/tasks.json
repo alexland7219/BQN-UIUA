@@ -2,9 +2,9 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run BQN",
+            "label": "Run UIUA or BQN",
             "type": "shell",
-            "command": "bqn -p \"$(cat \"${file}\")\"", // Install CBQN
+            "command": "cd \"${fileDirname}\" && if [[ \"${fileExtname}\" == \".bqn\" ]]; then bqn -p \"$(cat \"${file}\")\"; else uiua run \"${file}\"; fi",
             "group": {
                 "kind": "build",
                 "isDefault": true
@@ -17,6 +17,6 @@
             "problemMatcher": []
         }
     ],
-    "bqn.executablePath" : "/usr/bin/bqn",
+    "bqn.executablePath" : "/usr/bin/env bqn",
     "bqn.enableHoverDocumentation" : true
 }
