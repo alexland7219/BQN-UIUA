@@ -1,3 +1,5 @@
-Diamond ← ⇡
+Side ← ⬚@ ⤸0_0⊂⊸⍜(-@A)⇡
 
-Diamond @Z
+Half ← ˙≡(⊂↘₋₁⇌) Side
+
+Diamond ← ˜⊂↘₁⊸⇌Half
