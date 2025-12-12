@@ -1,0 +1,7 @@
+{
+    "editor.fontFamily": "Uiua386",
+    "editor.fontSize": 20,
+    "terminal.integrated.fontSize": 17,
+    "uiua.inlayHints.inlineSignatureHints": false,
+    "uiua.inlayHints.bindingSignatureHints": false
+}
