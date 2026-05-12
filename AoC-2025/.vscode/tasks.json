@@ -2,7 +2,7 @@
     "version": "2.0.0",
     "tasks": [
         {
-            "label": "Run UIUA or BQN",
+            "label": "Run UIUA",
             "type": "shell",
             "command": "uiua run \"${file}\"",
             "group": {
@@ -15,6 +15,20 @@
                 "panel": "shared"
             },
             "problemMatcher": []
+        },
+        {
+            "label": "Uiua Watcher",
+            "type": "shell",
+            "command": "uiua watch --clear",
+            "presentation": {
+                "reveal": "always",
+                "panel": "dedicated",
+                "focus": false
+            },
+            "isBackground": true,
+            "runOptions": {
+                "runOn": "folderOpen"
+            }
         }
     ],
 }
