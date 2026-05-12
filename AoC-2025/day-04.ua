@@ -2,7 +2,7 @@
 
 # ====== INPUTS ======
 RawInput ← AoCGet 2025 4
-Input ← ⊜(=@@) ⊸≠@\n RawInput
+Input    ← ⊜(=@@) ⊸≠@\n RawInput
 
 # ====== PARTS  ======
 A     ← <4/+⬚0⊡≡⌟+⊂A₂C₂
