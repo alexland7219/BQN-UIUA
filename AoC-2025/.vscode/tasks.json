@@ -16,19 +16,5 @@
             },
             "problemMatcher": []
         },
-        {
-            "label": "Uiua Watcher",
-            "type": "shell",
-            "command": "uiua watch --clear",
-            "presentation": {
-                "reveal": "always",
-                "panel": "dedicated",
-                "focus": false
-            },
-            "isBackground": true,
-            "runOptions": {
-                "runOn": "folderOpen"
-            }
-        }
     ],
 }

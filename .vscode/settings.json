@@ -1,5 +1,16 @@
 {
-    "editor.fontFamily": "Uiua386",
-    "editor.fontSize": 20,
-    "terminal.integrated.fontSize": 20
+    "editor.fontFamily": "JetBrains Mono",
+    "editor.fontSize": 16,
+    "terminal.integrated.fontSize": 16,
+    "uiua.inlayHints.inlineSignatureHints": false,
+    "uiua.inlayHints.bindingSignatureHints": false,
+    "files.autoSave": "off",
+    "[uiua]": {
+        "editor.fontFamily": "Uiua386",
+        "editor.fontSize": 20
+    },
+    "[bqn]": {
+        "editor.fontFamily": "Julia Mono",
+        "editor.fontSize": 20
+    }
 }
