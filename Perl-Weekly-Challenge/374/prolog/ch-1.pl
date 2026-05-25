@@ -2,12 +2,12 @@
 
 % You are given a string.
 
-% Write a script to return all possible vowel 
-% substrings in the given string. A vowel substring 
-% is a substring that only consists of vowels and 
+% Write a script to return all possible vowel
+% substrings in the given string. A vowel substring
+% is a substring that only consists of vowels and
 % has all five vowels present in it.
 
-use_module(library(lists)).
+:- use_module(library(lists)).
 
 is_ok(Str) :-
     string_chars(Str, L),
@@ -25,26 +25,26 @@ count_vowels(X, Full) :-
 
 :- begin_tests(count_vowels).
 
-test(1) :- 
+test(1) :-
     findall(X, count_vowels(X, "aeiou"), Sols),
     Sols == ["aeiou"].
 
-test(2) :- 
+test(2) :-
     findall(X, count_vowels(X, "aaeeeiioouu"), Sols),
     msort(Sols, SortSols),
     SortSols == ["aaeeeiioou", "aaeeeiioouu", "aeeeiioou", "aeeeiioouu"].
 
-test(3) :- 
+test(3) :-
     findall(X, count_vowels(X, "aeiouuaxaeiou"), Sols),
     msort(Sols, SortSols),
     SortSols == ["aeiou", "aeiou", "aeiouu", "aeiouua", "eiouua"].
 
-test(4) :- 
+test(4) :-
     findall(X, count_vowels(X, "uaeiou"), Sols),
     msort(Sols, SortSols),
     SortSols == ["aeiou", "uaeio", "uaeiou"].
 
-test(5) :- 
+test(5) :-
     findall(X, count_vowels(X, "aeioaeioa"), Sols),
     msort(Sols, SortSols),
     SortSols == [].

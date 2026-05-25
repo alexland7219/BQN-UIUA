@@ -2,10 +2,10 @@
 
 % You are given a string containing 0-9 digits only.
 
-% Write a script to return the largest number with 
+% Write a script to return the largest number with
 % all digits the same in the given string.
 
-use_module(library(lists)).
+:- use_module(library(lists)).
 
 to_rep_num(Str, Num) :-
     string_chars(Str, L),
@@ -16,7 +16,7 @@ to_rep_num(Str, Num) :-
 lsdn(Goal, S) :-
     findall(
         N,
-        (sub_string(S, _, _, _, X), to_rep_num(X, N)), 
+        (sub_string(S, _, _, _, X), to_rep_num(X, N)),
         Nums
     ),
     max_list(Nums, Goal).
